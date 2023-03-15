@@ -38,9 +38,9 @@ export class MoviesPage implements OnInit {
     });
   }
 
-  loadMore(event: InfiniteScrollCustomEvent){
+  loadMore(ev: any | undefined){
     this.currentPage++;
-    this.loadMovies(event);
+    this.loadMovies(ev);
   }
 
 }
